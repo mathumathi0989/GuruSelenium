@@ -28,6 +28,7 @@ public class Day1 {
     }
 
     @DataProvider
+   
     public Object[][] getdata() throws InvalidFormatException {
     Object data[][] = 	Util.getTestData("Data");
     return data;
@@ -47,9 +48,9 @@ public class Day1 {
            driver.findElement(By.name("btnLogin")).submit();
            
     	   Alert alt = driver.switchTo().alert();
-        	actualBoxtitle = alt.getText(); // get content of the Alter Message
+        	actualBoxtitle = alt.getText();
         	alt.accept();
-        	if (actualBoxtitle.contains(Util.EXPECT_ERROR)) { // Compare Error Text with Expected Error Value
+        	if (actualBoxtitle.contains(Util.EXPECT_ERROR)) { /
         		System.out.println("Test case : Passed"); 
         	} else {
         		System.out.println("Test case SS: Failed");
