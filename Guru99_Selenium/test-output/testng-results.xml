@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91705" started-at="2019-11-20T19:16:09 EST" finished-at="2019-11-20T19:17:41 EST">
+  <suite name="Default suite" duration-ms="48946" started-at="2019-11-24T19:18:12 EST" finished-at="2019-11-24T19:19:01 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="91705" started-at="2019-11-20T19:16:09 EST" finished-at="2019-11-20T19:17:41 EST">
+    <test name="Default test" duration-ms="48946" started-at="2019-11-24T19:18:12 EST" finished-at="2019-11-24T19:19:01 EST">
       <class name="com.guru99.Day1.Day1">
-        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="11269" started-at="2019-11-20T19:16:10 EST" finished-at="2019-11-20T19:16:21 EST">
+        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="11538" started-at="2019-11-24T19:18:12 EST" finished-at="2019-11-24T19:18:23 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="11070" started-at="2019-11-20T19:16:21 EST" data-provider="getdata" finished-at="2019-11-20T19:16:32 EST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="953" started-at="2019-11-24T19:18:23 EST" data-provider="getdata" finished-at="2019-11-24T19:18:24 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr1336]]>
+                <![CDATA[mngr233053]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[dAnavUq]]>
+                <![CDATA[qapEqEh]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="727" started-at="2019-11-20T19:16:32 EST" finished-at="2019-11-20T19:16:33 EST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="729" started-at="2019-11-24T19:18:24 EST" finished-at="2019-11-24T19:18:25 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="9064" started-at="2019-11-20T19:16:33 EST" finished-at="2019-11-20T19:16:42 EST">
+        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="10238" started-at="2019-11-24T19:18:25 EST" finished-at="2019-11-24T19:18:35 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="11386" started-at="2019-11-20T19:16:42 EST" data-provider="getdata" finished-at="2019-11-20T19:16:53 EST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="540" started-at="2019-11-24T19:18:35 EST" data-provider="getdata" finished-at="2019-11-24T19:18:36 EST">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="730" started-at="2019-11-20T19:16:53 EST" finished-at="2019-11-20T19:16:54 EST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="711" started-at="2019-11-24T19:18:36 EST" finished-at="2019-11-24T19:18:37 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="10189" started-at="2019-11-20T19:16:54 EST" finished-at="2019-11-20T19:17:04 EST">
+        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="10660" started-at="2019-11-24T19:18:37 EST" finished-at="2019-11-24T19:18:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="11261" started-at="2019-11-20T19:17:04 EST" data-provider="getdata" finished-at="2019-11-20T19:17:15 EST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="592" started-at="2019-11-24T19:18:47 EST" data-provider="getdata" finished-at="2019-11-24T19:18:48 EST">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="745" started-at="2019-11-20T19:17:15 EST" finished-at="2019-11-20T19:17:16 EST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="706" started-at="2019-11-24T19:18:48 EST" finished-at="2019-11-24T19:18:49 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="10150" started-at="2019-11-20T19:17:16 EST" finished-at="2019-11-20T19:17:26 EST">
+        <test-method status="PASS" signature="tearup()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="tearup" is-config="true" duration-ms="10641" started-at="2019-11-24T19:18:49 EST" finished-at="2019-11-24T19:18:59 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="13678" started-at="2019-11-20T19:17:26 EST" data-provider="getdata" finished-at="2019-11-20T19:17:40 EST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="login" duration-ms="569" started-at="2019-11-24T19:18:59 EST" data-provider="getdata" finished-at="2019-11-24T19:19:00 EST">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="1125" started-at="2019-11-20T19:17:40 EST" finished-at="2019-11-20T19:17:41 EST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.guru99.Day1.Day1@5d76b067]" name="teardown" is-config="true" duration-ms="677" started-at="2019-11-24T19:19:00 EST" finished-at="2019-11-24T19:19:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
