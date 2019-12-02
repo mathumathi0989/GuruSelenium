@@ -6,7 +6,7 @@
       <class name="com.guru99.Day1.Day1">
         <methods>
           <include name="tearup"/>
-          <include name="login"/>
+          <include name="login" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.guru99.Day1.Day1 -->

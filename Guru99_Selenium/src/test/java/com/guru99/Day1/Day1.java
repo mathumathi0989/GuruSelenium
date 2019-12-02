@@ -1,12 +1,19 @@
 package com.guru99.Day1;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -28,13 +35,33 @@ public class Day1 {
         driver.manage().timeouts().implicitlyWait(Util.waittime, TimeUnit.SECONDS);
     }
 
-    @DataProvider
+    @DataProvider(name = "getdata")
     public Object[][] getdata() throws InvalidFormatException {
     Object data[][] = 	Util.getTestData("Data");
     return data;
     }
-    @Test(dataProvider = "getdata")
-    public void login(String username, String password) {
+    
+    @DataProvider(name = "datahere")
+    public Object[][] testData() {
+
+		Object[][] data = new Object[4][2];
+
+		// 1st row
+		data[0][0] = Util.USER_NAME;
+		data[0][1] = Util.PASSWD;
+		//2nd row
+		data[1][0] = "invalid";
+		data[1][1] = "invalid";
+		//3rd row
+		data[2][0] = "valid";
+		data[2][1] = "invalid";
+		//4th row
+		data[3][0] = "invalid";
+		data[3][1] = "valid";
+		return data;
+	}
+    @Test(dataProvider = "datahere")
+    public void login(String username, String password) throws Exception {
     	String actualBoxtitle;
           	    
        	 driver.findElement(By.name("uid")).clear();
@@ -47,27 +74,21 @@ public class Day1 {
            Alert alt = driver.switchTo().alert();
         	actualBoxtitle = alt.getText();
         	alt.accept();
-        	if (actualBoxtitle.contains(Util.EXPECT_ERROR)) { 
-        		System.out.println("Test case : Passed"); 
-        	} else {
-        		System.out.println("Test case: Failed");
-        	}
+        	assertEquals(actualBoxtitle,Util.EXPECT_ERROR);
         }
         catch (NoAlertPresentException e) {
-        	String atitle = driver.getTitle();
-        	if (atitle.contains(Util.etitle)) {
-        		System.out.println("Test case SS: Passed");
-        		 String amgr = driver.findElement(By.xpath("(//*[@class='heading3'])[2]/td")).getText();
-        		  System.out.println(amgr);
-        	} else {
-        		System.out.println("Test case SS: Failed");
-        		  String amgr = driver.findElement(By.xpath("(//*[@class='heading3'])[2]/td")).getText();
-        		  System.out.println(amgr);
-        	}
+        	 String amgr = driver.findElement(By.xpath("(//*[@class='heading3'])[2]/td")).getText();
+        	 String[] parts = amgr.split(Util.PATTERN);
+				String dynamicText = parts[1];
+				assertTrue(dynamicText.substring(1, 5).equals(Util.FIRST_PATTERN));
+				String remain = dynamicText.substring(dynamicText.length() - 4);
+				assertTrue(remain.matches(Util.SECOND_PATTERN));
+				File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+				// Code to save screenshot at desired location
+				FileUtils.copyFile(scrFile, new File("C:\\Users\\mathu\\screenshot.png"));
+				
     }
-           catch (Exception e) {
-        	 
-           }
+           
     }
     @AfterMethod
     public void teardown() {

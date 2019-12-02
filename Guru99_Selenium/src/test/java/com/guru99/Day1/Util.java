@@ -22,6 +22,11 @@ public class Util {
     public static String EXPECT_ERROR = "User or Password is not valid";
     public static Workbook book;
     public static Sheet sheet;
+    public static final String PATTERN = ":";
+    public static final String FIRST_PATTERN = "mngr";
+    public static final String SECOND_PATTERN = "[0-9]+";
+    public static final String USER_NAME = "mngr233053";
+    public static final String PASSWD = "qapEqEh";
   
 public static Object[][] getTestData(String sheetName) throws InvalidFormatException {
 	FileInputStream file = null;
