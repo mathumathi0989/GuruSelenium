@@ -1,18 +1,11 @@
 package com.guru99.Day1;
- 
-import java.io.FileInputStream;
+ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook; 
-
-
-
 public class Util {
 	public  static String  url = "http://demo.guru99.com";
 	public static String etitle = "Guru99 Bank Manager HomePage";
@@ -27,7 +20,6 @@ public class Util {
     public static final String SECOND_PATTERN = "[0-9]+";
     public static final String USER_NAME = "mngr233053";
     public static final String PASSWD = "qapEqEh";
-  
 public static Object[][] getTestData(String sheetName) throws InvalidFormatException {
 	FileInputStream file = null;
 	try {
@@ -50,7 +42,5 @@ public static Object[][] getTestData(String sheetName) throws InvalidFormatExcep
 		}
 	}
 	return data;
-
-
 }
 }
